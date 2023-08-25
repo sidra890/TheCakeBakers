@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital@1&family=PT+Serif:ital,wght@1,700&family=Playfair:ital,opsz,wght@1,5..1200,300;1,5..1200,400&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Playfair', serif;
+font-family: 'PT Serif', serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ /*form start  */
+main {
+ background-color: white;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:50px
+ 
+}
+  
+  .form-container {
+     width:50%;
+    padding: 20px;
+    /* border: 4px double lightpink; */
+    border-radius: 5px;
+    background-color:  whitesmoke;
+    box-shadow: 20px 20px 20px lightgrey;
+    
+  }
+
+  .form-container h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color:purple;
+    letter-spacing: 3px;
+    font-weight: bolder;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color:lightpink;
+    color:black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color:plum;
+    color: purple;
+  }
+/* form end */
+
+
+  /* footer start */
+footer{
+  display: grid;
+  grid-template-columns: repeat(3,2fr);
+  max-width:100%;
+  background-color: rgb(250, 222, 222);
+  margin:0 auto;
+  padding:100px;
+  text-align: center;
+
+
+  
+}
+.list-column h5{
+  font-size: 25px;
+  color:black;
+  margin-left: 12px;
+}
+.list-column a{
+  color:black
+}
+.list-column i{
+  color:black
+
+}
+div.list-column{
+  text-align: center;
+}
+.list-column ul{
+  list-style-type: none ;
+}
+.list-column ul li a{
+  text-decoration: none;
+}
+/* footer end */
+
+  

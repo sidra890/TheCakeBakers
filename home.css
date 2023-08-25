@@ -1,0 +1,687 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital@1&family=PT+Serif:ital,wght@1,700&family=Playfair:ital,opsz,wght@1,5..1200,300;1,5..1200,400&display=swap');
+
+  /* font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Playfair', serif;
+font-family: 'PT Serif', serif; */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+
+/* header start */
+header{
+  position:sticky;
+  top:0;
+  /* background-color: pink; */
+  background-color: rgb(250, 222, 222);
+  box-shadow: 0 5px 10px  rgb(255, 182, 193);
+  /* box-shadow: 20px 20px 50px rgb(255, 182, 193); */
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  height:80px;
+}
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  display: flex;
+}
+header .logo h1{font-weight: bold;
+  font-family:'Dancing Script', cursive;
+  color: lightcoral;
+  margin-top: 10px;
+  
+}
+.active{
+  border-bottom: 2px solid purple;
+  border-bottom-left-radius: none;
+  border-top-right-radius: none;
+  
+}
+
+header .navbar ul{
+  list-style: none;
+}
+header .navbar ul li{
+  position: relative;
+  float: left;
+  margin-top:6px;
+}
+header .navbar ul li a{
+  font-size: 20px;
+  /* margin-top: 15px; */
+  padding: 11px;
+  color: purple;
+  display:block;
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Playfair', serif;
+  border-radius: 8px;
+  transition:all 0.8s ease;
+  text-decoration: none;
+  margin-right: 12px;
+}
+header .navbar ul li a:hover{
+  color: purple;
+  background-color: white;
+  border-bottom:1px solid black
+  
+}
+/* this is for dropdown width color setting(last ul is dropdown list ul) */
+header .navbar ul li ul{
+  position:absolute;
+  left:0;
+  width:280px;
+  background-color: rgba(255, 192, 203, 0.93);
+  display: none;
+  border:1px solid purple;
+  border-radius: 8px;
+  height: 300px;
+  line-height: 30px;
+  
+}
+header .navbar ul li ul li{
+  width: 100%;
+}
+header .navbar ul li ul li ul{
+  height:260px;
+}
+
+header .navbar ul li ul li ul{
+  left: 190px;
+  top:0;
+}
+/* (> child selector)it selects list within list(dropdown ul list) */
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar{
+  display: none;
+}
+
+header label{
+  font-size: 20px;
+  color: purple;
+  cursor: pointer;
+  display: none;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Playfair', serif;
+
+
+}
+
+
+@media(max-width:991px){
+  header{
+    padding:20px
+  }
+  header label{
+    display: initial;
+  }
+    header .navbar{
+    position: absolute;
+    top: 100%; left:0; right:0;
+    border-top: 1px solid black;
+    display:none;
+    background-color: pink;
+    }
+    header .navbar ul li{
+      width:100%
+    }
+    header .navbar ul li ul{
+      position:relative;
+      width: 100%;
+    }
+    header .navbar ul li ul li{
+      background-color:pink;
+      /* border-bottom: 1px solid black; */
+
+      ;
+    }
+    header .navbar ul li ul li ul{
+      width: 100%;
+      left:0
+    }
+    /* (~ General sibling selecter) selects each elements that are preceded by <p> element or main parent element */
+    #menu-bar:checked ~ .navbar{
+      display:initial;
+
+    }
+    /* header.logo{
+      font-size: 22px;
+      /* margin-top: 15px; */
+    
+     header .logo h1{
+      font-size: 25px;
+      margin-top: 15px;
+    }
+    header .logo h1 span{
+      font-size: 25px;
+    }
+     header .logo img{
+      width:50px;
+      height: 50px;
+    }
+
+}
+/* header end */
+
+
+
+
+
+
+  /* link navigation */
+  .link-image {
+    width: 60px;
+    height: 50px;
+    border-radius: 10%;
+    border: 2px solid white;
+    margin-top: 20px;
+  }
+
+  section.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* background: -webkit-linear-gradient(to right, #f6ff00d4, #7cb6f4a6);
+    background: linear-gradient(to right, #f6ff00c9, #db36a4b4); */
+    background: rgb(250, 222, 222);  
+    border: 4px double lightpink;
+
+
+  }
+
+
+  .links-container a {
+    text-decoration: none;
+    color: purple;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .links-container p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 5px;}
+
+
+  .links-container a:hover {
+    border-bottom: 3px solid purple;
+    color: black;
+  }
+
+
+  /* main start */
+main.about{
+  padding:100px;
+  background-image: url(./images/background\ \(1\).jpg)
+  
+}
+div.row{
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.row .col50{
+  max-width: 1200px;
+  text-align: center;
+  align-self: center;
+}
+  .row .col50 {
+  position:relative;
+  animation-name: amna4;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+@keyframes amna4{
+  0%{
+    top:0px;
+    left:-300px
+  }
+  25%{
+     top:0px;
+     left:0px
+  }
+}
+
+
+.row .col60  {
+  position:relative;
+  animation-name: amna5;
+  animation-duration: 7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+
+}
+@keyframes amna5{
+  0%{
+    right:0px;
+    top:-300px
+  }
+  25%{
+     right:0px;
+     top:0px
+  }
+}
+
+ .col60 img{
+  width:100%;
+  height:100%;
+  box-shadow: 35px 35px 35px rgb(217, 60, 60);
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+.read-more{
+  margin-top: 25px;
+}
+.read-more a{
+  text-decoration: none;
+    font-size: 20px;
+    border-bottom: 2px solid purple;
+    margin-top: 70px;
+    color: black;
+    padding: 10px;
+    word-spacing: 2px;
+    border-radius: 15px;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Playfair', serif;
+    font-weight: 500;
+    background-color: lightpink;
+    transition: 0.5s;
+}
+.read-more a:hover{
+  background-color: white;
+  border-radius: 15px;
+  color: purple;
+}
+.col50 h1{
+  color: purple;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+    letter-spacing: 3px;
+}
+.col50 h1 span{
+  font-family: 'Dancing Script', cursive;
+  font-size: 6rem;
+
+}
+.col50 p{
+  text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: purple;
+}
+
+@media screen and (max-width:768px) {
+  div.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right:15px ;
+    width:100%
+
+
+  }
+}
+
+@media screen and (max-width:992px) {
+   div.row{
+    display: grid;
+    grid-template-columns: 1fr;
+    width:100%
+
+  }
+}
+/* main end */
+
+/* carousal start */
+  .carousel-caption h1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    /* background-color: thistle; */
+    font-size: 75px;
+    font-weight: 200;
+    font-weight: bold;
+
+  }
+
+  .carousel-caption {
+    background-color: rgba(216, 112, 147, 0.444);
+    border-radius: 20px;
+    /* width: 70px; */
+  }
+
+  .carousel-caption a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    border-bottom: 2px solid black;
+    /* font-weight: 200; */
+    font-family: 'PT Serif', serif;
+    background-color: rgba(255, 255, 255, 0.566);
+    padding: 3px;
+    border-radius: 10px;
+    margin-top: 3px;
+  }
+
+  .carousel-caption a:hover {
+    background-color: white;
+    color: purple;
+    border-bottom: 2px solid purple;
+  }
+
+
+  /* .crousel end
+
+/* product section start */
+ 
+  div.view-all{
+    margin-top: 80px
+
+  }
+  .view-all a{
+    text-decoration: none;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    margin-top: 70px;
+    color:black;
+    padding: 14px;
+    word-spacing: 3px;
+    border-radius: 15px;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Playfair', serif;
+    font-weight:bold;
+    background-color: rgba(255, 182, 193, 0.692);
+    transition: 0.5s;
+  }
+  .view-all a:hover{
+    border-radius: 15px;
+    color:purple;
+    background-color: white;
+    border-bottom: 2px solid purple;
+    
+  }
+  #cakes {
+    /* background-image: url(./images/background\ \(1\).jpg);
+    background-size: cover;
+    background-position: center; */
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+  }
+
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+  }
+
+
+
+  .product-box {
+    /* border: 3px solid darksalmon; */
+    border-radius: 15px;
+    box-shadow: 20px 25px 20px lightgray;
+    background-color: rgb(250, 222, 222);
+     padding: 15px;
+    transition: all 0.2s ease
+  }
+
+  .product-box:hover {
+    /* color: white; */
+    font-weight: bolder;
+    box-shadow: 35px 25px 20px lightpink;
+  }
+
+
+  #cakes h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-size: 5em;
+    color: purple;
+    font-weight: bolder;
+  }
+
+  .img img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+  }
+
+
+  .item-price {
+    text-align: center;
+    padding: 5px
+  }
+
+  .item-price p {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .label {
+    text-align: center;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .order-zoom {
+    text-align: center;
+    padding: 7px;
+    /* background: whitesmoke; */
+    border-radius: 12px;
+  }
+
+  .order-zoom button {
+    border-radius: 6px;
+    border: none;
+    background-color: whitesmoke;
+    color: black;
+    padding: 4px;
+    font-weight: bold;
+  }
+
+  .order-zoom button a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .order-zoom button:hover {
+    color: white;
+    background-color: rgb(250, 130, 170);
+
+  }
+
+  .order-zoom button a:hover {
+    color: white;
+    background-color: rgb(250, 130, 170);
+
+  }
+
+  @media screen and (max-width:992px) {
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+      margin-right: 70px;
+    }
+  }
+
+
+  #cupcakes {
+    /* background-image: url(./images/background\ \(1\).jpg);
+    background-size: cover;
+    background-position: center; */
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+  }
+
+  #cupcakes h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-size: 5em;
+    color: purple;
+    font-weight: bolder;
+
+  }
+
+  #donuts {
+    /* background-image: url(./images/background\ \(1\).jpg);
+    background-size: cover;
+    background-position: center; */
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+  }
+
+  #donuts h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-size: 5em;
+    color: purple;
+    font-weight: bolder;
+  }
+
+  #pastry {
+    /* background-image: url(./images/background\ \(1\).jpg);
+    background-size: cover;
+    background-position: center; */
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+  }
+
+  #pastry h3 {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 5px;
+    font-size: 5em;
+    color: purple;
+    font-weight: bolder;
+
+  }
+
+
+
+  /* footer start */
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /* max-width: 100%; */
+    background-color: rgb(250, 222, 222);
+    /* margin: 0 auto; */
+    padding: 100px;
+    /* text-align: center; */
+
+
+
+  }
+
+  .list-column h5 {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    /* margin-right: 30px; */
+    text-align:center;
+    font-family: 'Josefin Sans', sans-serif
+  }
+
+  .list-column a {
+    color: black;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Josefin Sans', sans-serif
+  }
+
+  .list-column a:hover{
+    color:red
+  }
+
+  .list-column ul li span{
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Josefin Sans', sans-serif
+  }
+
+  .list-column i {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+
+  }
+
+  /* div.list-column {
+    text-align: center
+  } */
+
+  .list-column ul {
+    list-style-type: none;
+  }
+  .list-column ul li{
+    text-align: center;
+    /* font-family: 'PT Serif', serif; */
+    font-family: 'Josefin Sans', sans-serif
+
+  }
+
+  .list-column ul li a {
+    text-decoration: none;
+  }
+
+  /* footer end */
+  @media(max-width:992px){
+ footer{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /* padding:100px */
+ }
+  }
+  @media(max-width:768px){
+    footer{
+     display:grid;
+     grid-template-columns: 1fr;
+     gap: 20px;
+     /* padding:100px */
+    }
+    .list-column{
+      margin-right: 50px;
+    }
+     }

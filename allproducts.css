@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital@1&family=PT+Serif:ital,wght@1,700&family=Playfair:ital,opsz,wght@1,5..1200,300;1,5..1200,400&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Playfair', serif;
+font-family: 'PT Serif', serif; */
+
+
+/* link navigation */
+.link-image {
+  width: 60px;
+  height: 50px;
+  border-radius: 10%;
+  border: 2px solid white;
+  margin-top: 20px;
+}
+
+section.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+   /* background: -webkit-linear-gradient(to right, #f6ff00d4, #7cb6f4a6);
+  background: linear-gradient(to right, #f6ff00c9, #db36a4b4); */
+  background: rgb(250, 222, 222);  
+  border: 4px double lightpink;
+  }
+
+
+.links-container a {
+  text-decoration: none;
+  color: purple;
+  margin-top: 10px;
+  letter-spacing: 3px;
+}
+
+.links-container p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 5px;
+  font-family: 'Dancing Script', cursive;
+  /* color:rgb(90, 0, 128); */
+
+}
+
+.links-container a:hover {
+  border-bottom: 3px solid purple;
+  /* border-radius: 10px; */
+  color: black;
+
+}
+
+/* main start */
+main.allprooduct-main {
+  background: url(./images/colorful.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+ main .allproducts-content {
+  text-align: center;
+  max-width: 1200px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.603);
+  margin:0 auto;
+  padding:10px;
+  
+}
+
+.allproducts-content h1 {
+  font-size: 70px;
+  color: purple;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+  /* background-color: rgba(255, 255, 255, 0.327);
+  border-radius: 10px; */
+}
+.allproducts-content h1 span{
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+
+.allproducts-content p {
+  font-size: 20px;
+  margin-top: 10px;
+  /* margin: 30px; */
+  font-family: 'PT Serif', serif;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* background-color: rgba(255, 255, 255, 0.291);
+    border-radius: 10px; */
+}
+
+.allproducts-content a {
+  text-decoration: none;
+  color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* main end */
+
+/* product section start */
+#cakes {
+  background-color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+
+
+.product-box {
+  /* border: 3px solid darksalmon; */
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 20px 25px 20px lightgray;
+    background-color: rgb(250, 222, 222);
+  transition: all 0.2s ease
+}
+
+.product-box:hover {
+  box-shadow: 20px 20px 20px lightpink
+}
+
+
+#cakes h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+}
+
+.img img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+
+}
+
+
+.item-price {
+  text-align: center;
+  padding: 5px
+}
+
+ .product-box div.item-price p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+div.label {
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  /* font-weight: bold; */
+  padding: 5px;
+  font-weight: bold;
+}
+
+.order-zoom {
+  text-align: center;
+  padding: 5px;
+  /* background: wheat; */
+  border-radius: 12px;
+}
+
+.order-zoom button {
+  border-radius: 6px;
+  border: none;
+  background-color: whitesmoke;
+  color: black;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.order-zoom button a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.order-zoom button:hover {
+  color:white;
+  background-color: rgb(250, 130, 170);
+
+}
+
+.order-zoom button a:hover {
+  color:white;
+  background-color: rgb(250, 130, 170);
+
+}
+
+@media screen and (max-width:992px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+}
+
+#cupcakes {
+  /* background-image: url(./images/background\ \(1\).jpg);
+  background-size: cover;
+  background-position: center; */
+  background-color: white;
+  padding: 100px;
+  text-align: center;
+
+}
+
+#cupcakes h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+
+}
+
+
+
+#donuts {
+  /* background-image: url(./images/background\ \(1\).jpg);
+  background-size: cover;
+  background-position: center; */
+  background-color: white;
+  padding: 100px;
+  text-align: center;
+
+}
+
+#donuts h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+}
+
+#pastry {
+  background-color: white;
+  padding: 100px;
+  text-align: center;
+
+
+
+}
+
+#pastry h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+
+}
+

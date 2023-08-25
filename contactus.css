@@ -1,0 +1,143 @@
+section{
+    /* background-image: url(./images/background\ \(1\).jpg);
+    background-size: cover;
+    background-position: center; */
+    background-color: white;
+    width:100%;
+}
+.aboutUs{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
+  text-align: center;
+  /* gap: 20px; */
+  justify-items: center;
+  /* padding: 50px; */
+}
+
+.img{
+  align-self: center;
+}
+div.img img{
+  width:400px;
+  height:400px;
+  /* border:4px solid darksalmon; */
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.aboutlist{
+  align-self: center;
+  padding:50px
+}
+.aboutlist h3{
+  font-size:5em;
+  font-family: 'Dancing Script', cursiver;
+  color:purple
+}
+.aboutlist p{
+  font-family: 'Dancing Script', cursiver;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width:768px){
+  .aboutUs{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+}
+@media screen and (max-width:992px){
+  .aboutUs{
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+}
+/* geolocation start*/
+
+section.geolocation{
+  display: flex;
+  padding:50px;
+  
+}
+div.contact{
+  align-self:first baseline;
+  padding:20px;
+  border-radius: 20px;
+  /* background-color: rgba(255, 182, 193, 0.336); */
+  
+}
+ul{
+  line-height: 30px;
+}
+ul li{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+}
+div.contact h1{
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  color: purple;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+.contact ul h3{
+  font-family: 'Josefin Sans', sans-serif;
+  color:purple;
+  font-weight: bold;
+  font-style: italic;
+  
+}
+
+.contact ul li a{
+  text-decoration: none;
+  color: black;
+  font-family: 'Josefin Sans', sans-serif;
+  transition:all 0.1s ease
+}
+.contact ul li a:hover{
+  background-color: lightpink;
+  padding: 3px;
+  border-radius:5px;
+  
+}
+iframe{
+  border-radius: 20px;
+
+}
+@media screen and (max-width:992px){
+  section.geolocation{
+    display:flex;
+    flex-direction: column;
+  }
+iframe{
+  width:400px;
+  height:300px
+}
+div.contact h1{
+  text-align: start;
+}
+  
+}
+@media screen and (max-width:510px){
+  section.geolocation{
+    display:flex;
+    flex-direction: column;
+  }
+iframe{
+  width:250px;
+  height:300px
+}
+div.contact h1{
+  text-align: start;
+}
+  
+}
+.list-column ul li a:hover{
+color:red;
+
+   
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital@1&family=PT+Serif:ital,wght@1,700&family=Playfair:ital,opsz,wght@1,5..1200,300;1,5..1200,400&display=swap');
+
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Playfair', serif;
+font-family: 'PT Serif', serif; */
+
+
+
+/* product section start */
+#eng-cakes {
+  background-color: white;
+  padding: 100px;
+  text-align: center;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  justify-items: center;
+}
+
+
+
+.product-box {
+  border-radius: 15px;
+  box-shadow: 20px 25px 20px lightgray;
+    background-color: rgb(250, 222, 222);
+  transition: all 0.2s ease
+}
+
+.product-box:hover {
+  box-shadow: 20px 20px 20px lightpink;
+}
+
+
+#eng-cakes h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+}
+.img img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+
+}
+
+
+.item-price {
+  text-align: center;
+  padding: 5px
+}
+
+.item-price p {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.label {
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: lightsalmon;
+  border-radius: 12px;
+  /* font-weight: bold; */
+  padding: 5px;
+}
+
+.order-zoom {
+  text-align: center;
+  padding: 5px;
+  /* background: lightsalmon; */
+  border-radius: 12px;
+}
+
+.order-zoom button {
+  border-radius: 6px;
+  border: none;
+  background-color: lightsalmon;
+  color: black;
+  padding: 2px
+}
+
+.order-zoom button a {
+  color: black;
+  text-decoration: none;
+}
+
+.order-zoom button:hover {
+  color: white;
+  background-color: rgb(250, 130, 170);
+
+}
+
+.order-zoom button a:hover {
+  color: white;
+  background-color: rgb(250, 130, 170);
+
+}
+@media screen and (max-width:992px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+}
+
+#cupcakes {
+  background-image: url(./images/background\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  text-align: center;
+
+}
+
+#cupcakes h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+
+}
+
+
+
+#donuts {
+  background-image: url(./images/background\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  text-align: center;
+
+}
+
+#donuts h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+}
+
+#pastry {
+  background-image: url(./images/background\ \(1\).jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  text-align: center;
+
+
+
+}
+
+#pastry h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-size: 5em;
+  color: purple;
+  font-weight: bolder;
+
+}
+

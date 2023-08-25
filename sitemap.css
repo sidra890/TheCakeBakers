@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital@1&family=PT+Serif:ital,wght@1,700&family=Playfair:ital,opsz,wght@1,5..1200,300;1,5..1200,400&display=swap');
+section.site-map{
+    /* background-image:url(./images/background\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background-color: whitesmoke;
+    padding: 100px;
+    text-align: center
+}
+div.big-container{
+    background-color: rgba(255, 182, 193, 0.452);
+    border-radius: 20px;
+    width:100%;
+    box-shadow: 20px 20px 20px rgba(255, 182, 193, 0.63);
+    border: 4px double lightpink;
+
+}
+
+.big-container h1{
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    padding: 10px;
+    display: inline-block;
+    font-family: 'Dancing Script', cursive ;
+    font-size: 42px;
+    color: purple;
+    font-weight: bold;
+}
+ div.map-container div.map-column ul li a{
+    color:black;
+    font-family: 'Josefin Sans', sans-serif;
+    padding:5px;
+    transition: all 0.5s ease 
+}
+div.map-container div.map-column ul li a:hover{
+    color: purple;
+    background-color: white;
+    /* padding:5px; */
+    border-radius: 8px;
+}
+
+.map-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.map-container > div.map-column ul li{
+    padding-bottom: 15px;
+    list-style-type:disc;
+}
+
+.map-container > div.map-column ul li a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+@media screen and (max-width: 992px){
+    .map-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+        margin-right: 30px;
+    }
+div.big-container{
+    width:180px;
+    margin: 0 auto;
+}
+
+}
+@media screen and (max-width: 768px){
+    .map-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+        margin-right: 30px;
+    }
+    div.big-container{
+        width:180px;
+        
+}}

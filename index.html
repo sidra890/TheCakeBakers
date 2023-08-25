@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans:ital@1&family=PT+Serif:ital,wght@1,700&family=Playfair:ital,opsz,wght@1,5..1200,300;1,5..1200,400&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main {
+    /* background-image: url(./images/background\ \(1\).jpg); */
+    background-image: url(./images/coconut-ice-mud-cake-truffle_Square-1300x1300.webp);
+    opacity: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+ 
+
+  h2 {
+    text-align: center;
+    color:#e91e63;
+    margin-bottom: 70px;
+    font-family: 'Dancing Script', cursive;;
+    font-weight: bolder;
+    font-size: 80px;
+    margin-bottom: 30px;
+    
+  
+  }
+
+  form {
+    max-width: 500px;
+    width:100%;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: rgba(255, 255, 255, 0.444);
+    border-radius: 8px;
+    box-shadow: 20px 20px 20px rgba(255, 182, 193, 0.63);
+    border: 4px double lightpink;
+  }
+
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e91e63;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  form input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #c2185b;
+    transition: all 0.5s ease;
+  }
+ label[for="email"]{
+  margin-top: 15px;
+ }
+  
+  input[type="text"]:hover,
+  input[type="email"]:hover,
+  input[type="password"]:hover {
+    background-color: rgba(255, 182, 193, 0.696);
+    border-radius: 8px;
+  }
+  #submit{
+    display: flex;
+    margin:0 auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-family:  'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border:none;
+    transition: all .4s ease;
+
+  }
+
+  #submit:hover {
+    border-radius: 10px;
+  }
+  .sign-up{
+    text-align:center;
+    /* margin-top: 50px; */
+
+  }
+  
+</style>
+
+<body>
+  <main>
+    <form action="home.html"  onsubmit="openHomePage(event)">
+      <h2>Login Form</h2>
+      <div class="container">
+        <label for="name ">Name:</label>
+        <input type="text" id="name" name="name"  pattern="^\S+[A-Za-z]" title="Please enter a valid name(only alphabets and spaces are not allowed)" required> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" pattern="^\S+[a-zA-Z0-9.-%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter valid email" name="email" required>
+        <label for="Password">Password:</label>
+        <input type="password" name="Password" id="password" pattern="^\S+$" title="no spaces allowed" required>
+        <input type="submit" value="Login" id="submit">
+        
+  
+      </div><br>
+      <div class="sign-up">
+        <p>Don't have an account?<a href="signup.html">Sign Up</a></p>
+      </div>
+    </form>
+    
+    
+    
+  </main>
+
+  <script>
+    function openHomePage(event) {
+      event.preventDefault(); 
+      // Prevent form submission
+      var nameInput = document.getElementById('name');
+      var name = nameInput.value.trim();
+
+      var url = "./home.html";
+      url += "?name=" + encodeURIComponent(name);
+      window.location.href = url;
+    }
+  </script>
+  
+</body>
+
+</html>
+
+
